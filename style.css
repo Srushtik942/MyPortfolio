@@ -1,0 +1,183 @@
+body {
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.1), rgba(123, 104, 238, 0.15));
+  min-height: 100vh;
+  margin: 0;
+  color: #eee;
+}
+
+.about-box {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(0, 0, 0, 0.8));
+  border: 1px solid rgba(203, 213, 255, 0.2); /* subtle light purple border */
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(124, 58, 237, 0.2); /* soft glow */
+}
+
+.tech-stack-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tech-item {
+  background: rgba(124, 58, 237, 0.15); /* light purple background */
+  border-radius: 12px;
+  font-weight: 600;
+  color: #7c3aed; /* purple text */
+  font-size: 1.1rem;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.tech-item:hover {
+  background: rgba(124, 58, 237, 0.3);
+}
+
+.projects-row {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+.project-card {
+  background: rgba(124, 58, 237, 0.1);
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.25);
+}
+
+.btn-purple {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #5b21b6;
+  color: white;
+}
+.btn-purple {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #5b21b6;
+  color: white;
+}
+.footer a:hover {
+  color: #7c3aed; /* purple hover */
+  text-decoration: none;
+}
+.contact-link {
+  color: #7c3aed;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #e0e7ff !important; /* Light purple on hover/active */
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.scrolling-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  font-weight: 600;
+  color: #a78bfacc;
+  font-size: 1.1rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #7c3aedcc, #a78bfacc);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #d8b4fe;
+  text-decoration: none;
+}
+
+.custom-navbar .nav-link {
+  color: #ddd6fe;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #f3e8ff;
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1) brightness(1.2);
+}
