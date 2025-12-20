@@ -121,6 +121,7 @@ body {
 .scrolling-wrapper {
   overflow: hidden;
   white-space: nowrap;
+  text: center
 }
 
 .scrolling-content {
@@ -130,6 +131,7 @@ body {
   font-weight: 600;
   color: #a78bfacc;
   font-size: 1.1rem;
+  text:center
 }
 
 @keyframes scroll-left {
